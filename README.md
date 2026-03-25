@@ -100,7 +100,7 @@ This strategy parses Markdown structure to create intelligent chunks:
 - `CHUNK_INCLUDE_PARENT_HEADERS=true` - Prepend parent headers to chunks
 - `CHUNK_EXTRACT_WIKILINKS=true` - Extract `[[wikilinks]]` as metadata
 
-**Example:** A search for "Farshad" in a character file will return the chunk with metadata showing it's from "Relationships > Farshad — Origin / Final Echo", making context clear without needing to fetch parent sections.
+**Example:** A search for "Talion" in a character file will return the chunk with metadata showing it's from "Relationships > Talion — Origin / Whatever", making context clear without needing to fetch parent sections.
 
 ### Paragraph-Based Chunking (`CHUNKING_STRATEGY=paragraph`)
 
@@ -230,7 +230,7 @@ When using Markdown-aware chunking, each chunk includes rich metadata:
 
 **Section metadata:**
 - `section_h1`, `section_h2`, `section_h3` - Header hierarchy
-- `section_path` - Full hierarchical path (e.g., "Summary > Relationships > Farshad")
+- `section_path` - Full hierarchical path (e.g., "Summary > Relationships > Talion")
 - `linked_entities` - Array of wikilinks found in the section
 
 **Sub-chunk metadata (for split sections):**
